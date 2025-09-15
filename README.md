@@ -1,2 +1,2 @@
-# linas-matp-se
+# linas-matpåse
 Frontend för Linas matpåse hemsida.
