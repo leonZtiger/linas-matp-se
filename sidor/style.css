@@ -1,0 +1,59 @@
+h1 {
+    font-family: "Sacramento", sans-serif;
+    font-size: 4rem;
+}
+
+h2 {
+    font-family: "Poetsen One", sans-serif;
+    font-size: 2rem;
+}
+
+h1, h2 {
+    color: #B45253;
+    text-align: center;
+    margin: 2rem 0;
+}
+
+h3 {
+     color: #B45253;
+     font-family: "Roboto", sans-serif;
+     text-align: center;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    background-color: #FFD5D5;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 1rem auto;
+    border-radius: 2%;
+}
+
+.horisontal-list {
+    font-family: "Roboto", sans-serif;
+    display: flex;
+    flex: 1;
+    padding: 0;
+}
+
+.horisontal-list h3 {
+    color: #000000;
+}
+
+.horisontal-list li {
+    display: inline-block;
+    margin: 0.5rem;
+    padding: 0.5rem 1rem;
+    background-color: #59AC77;
+}
+
+.horisontal-list img {
+    max-width: 50%;
+}
