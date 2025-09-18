@@ -85,3 +85,33 @@ body {
     max-width: 50%;
     border-radius: 2%;
 }
+
+@media only screen and (max-width: 850px) {
+    .image-heading-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .image-heading-container div {
+        width: 60%;
+    }
+
+    .image-heading-container > div:last-child {
+        order: -1;
+    }
+
+    .recipe-images {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .recipe-images img {
+        display: block;
+        max-width: 60%;
+        margin-bottom: 1rem;
+        border-radius: 2%;
+    }
+}
