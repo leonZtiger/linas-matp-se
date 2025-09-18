@@ -8,6 +8,12 @@ h2 {
     font-size: 2rem;
 }
 
+hgroup p {
+    color: #B45253;
+    font-family: "Poetsen One", sans-serif;
+    font-size: 1.5rem;
+}
+
 h1, h2 {
     color: #B45253;
     text-align: center;
@@ -15,9 +21,9 @@ h1, h2 {
 }
 
 h3 {
-     color: #B45253;
-     font-family: "Roboto", sans-serif;
-     text-align: center;
+    color: #B45253;
+    font-family: "Roboto", sans-serif;
+    text-align: center;
 }
 
 body {
@@ -28,12 +34,32 @@ body {
     padding: 0;
 }
 
-img {
-    display: block;
-    max-width: 100%;
-    height: auto;
-    margin: 1rem auto;
+.image-heading-container {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.image-heading-container div {
+    width: 30%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.image-heading-container img {
+    max-height: 100%;
+    width: 100%;
     border-radius: 2%;
+}
+
+.recipe-images {
+    display: flex;
+}
+
+.recipe-images img{
+    flex: 1;
+    max-width: 25%;
 }
 
 .horisontal-list {
@@ -52,8 +78,10 @@ img {
     margin: 0.5rem;
     padding: 0.5rem 1rem;
     background-color: #59AC77;
+    text-align: center;
 }
 
 .horisontal-list img {
     max-width: 50%;
+    border-radius: 2%;
 }
