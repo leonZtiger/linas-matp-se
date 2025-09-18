@@ -65,25 +65,37 @@ body {
 .horisontal-list {
     font-family: "Roboto", sans-serif;
     display: flex;
-    flex: 1;
     padding: 0;
+    justify-content: center;
 }
 
 .horisontal-list h3 {
     color: #000000;
+    margin-bottom: 0;
 }
 
 .horisontal-list li {
-    display: inline-block;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
     margin: 0.5rem;
-    padding: 0.5rem 1rem;
+    padding: 1rem 1rem;
     background-color: #59AC77;
     text-align: center;
+    flex: 1;
+    max-width: 30%;
+    box-sizing: border-box;
 }
 
 .horisontal-list img {
-    max-width: 50%;
+    max-width: 100%;
+    aspect-ratio: 16/9;
+    height: 200px;
+    object-fit: contain;
     border-radius: 2%;
+    margin: 0 auto;
+    margin-bottom: 1rem;
 }
 
 @media only screen and (max-width: 850px) {
@@ -113,5 +125,19 @@ body {
         max-width: 60%;
         margin-bottom: 1rem;
         border-radius: 2%;
+    }
+
+    .horisontal-list {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .horisontal-list li {
+        max-width: 100%;
+        margin: 0.5rem auto;
+    }
+
+    .horisontal-list img {
+        height: auto;
     }
 }
