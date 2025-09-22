@@ -38,6 +38,7 @@ body {
     display: flex;
     gap: 1rem;
     justify-content: center;
+    margin-top: 2rem;
 }
 
 .image-heading-container div {
@@ -96,6 +97,14 @@ body {
     border-radius: 2%;
     margin: 0 auto;
     margin-bottom: 1rem;
+}
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 1,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
 }
 
 @media only screen and (max-width: 850px) {
