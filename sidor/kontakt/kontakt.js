@@ -10,14 +10,14 @@ const messageError = document.getElementById('messageError')
 
 const hasValidText = false;
 
-const nameMinLength = 3
-const phoneRegex = /^\d{10}$/
+const nameRegex = /^[A-Za-zÅÄÖåäö\s]{3,}$/
+const phoneRegex = /^(?:\d-?){10}$/
 const emailRegex = /^[\w\-\.]+@([\w-]+\.)+[\w-]{2,}$/
 const messageMinLength = 7
 
 
 const validateName = () => {
-    if (nameInput.value.trim().length < nameMinLength) {
+    if (!nameRegex.test(nameInput.value.trim())) {
         nameError.textContent = `Rutan får inte lämnas tom`
         nameInput.style.borderColor = "red"
     } else {
@@ -57,7 +57,7 @@ const validateMessage = () => {
 }
 
 const validateForm = () => {
-    if (nameInput.value.trim().length >= nameMinLength &&
+    if (nameRegex .test(nameInput.value) &&
         phoneRegex.test(phoneInput.value) &&
         emailRegex.test(emailInput.value) &&
         messageInput.value.trim().length >= messageMinLength) {

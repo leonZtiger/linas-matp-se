@@ -73,6 +73,7 @@ label {
 
 input,
 textarea {
+    font-family: "poppins", sans-serif;
     width: 80%;
     height: 1.5em;
     border-radius: 8px;
