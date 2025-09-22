@@ -5,14 +5,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Linas matpåse</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="startsidaStyle.css">
     <link href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
+    <script src="main.js" defer></script>
+    <link href="theme.css" rel="stylesheet"/>
 </head>
 
-<body>
+<body onload="loadContent()">
+    <!-- Header with inserted html from main.js -->
+    <div id="header"></div>
+    
     <h1>Linas matpåse</h1>
 
     <div class="image-heading-container">
@@ -60,6 +65,9 @@
 
     <h2>Bara nöjda kunder</h2>
 
+
+    <!-- Footer with inserted html from main.js -->
+    <div id="footer"></div>
 </body>
 
 </html>
