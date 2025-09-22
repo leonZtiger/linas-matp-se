@@ -3,21 +3,26 @@
 // adds defualt content like the footer and header
 function loadContent() {
 
-    loadHeader()
+    loadHeader();
+    loadFooter();
+}
 
-    fetch("./footer.html")
-        .then(res => res.text())
-        .then(html => { document.getElementById("footer").innerHTML = html; })
-        .catch(err => console.error("Footer load failed:", err));
+async function  loadFooter(params) {
+    
+    const file = await fetch("./footer.html");
+    const footer = document.getElementById("footer");
+
+    footer.innerHTML = await file.text();
 }
 
 async function loadHeader() {
+    // Fetch file
     const file = await fetch("./header.html")
     const header = document.getElementById("header");
 
     header.innerHTML = await file.text();
 
-    // add event handlers
+    // add event handlers, must use query selector as header content is loaded dynamicly.
     const checkbox = header.querySelector('#hamburger');
     const navbar = header.querySelector('#mobileNav');
 
@@ -29,7 +34,7 @@ async function loadHeader() {
         }
     }
 
-    // Toggle on click
+    // toggle menu on click
     checkbox.addEventListener('change', () => handleMenu(checkbox.checked));
 }
 
