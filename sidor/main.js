@@ -5,6 +5,8 @@ function loadContent() {
 
     loadHeader();
     loadFooter();
+
+    document.title = "Linas matpåse";
 }
 
 async function  loadFooter(params) {
