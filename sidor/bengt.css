@@ -1,0 +1,60 @@
+main {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+}
+
+section {}
+
+.hero {
+    position: relative;
+
+    .bengt-img {
+        position: relative;
+        width: 100vw;
+        height: 500px;
+    }
+
+    .sunglasses {
+        position: absolute;
+        top: 25%;
+        left: 35%;
+        width: 200px;
+        object-fit: cover;
+        aspect-ratio: 2/1;
+        animation: spinner infinite 2s;
+    }
+
+    h2 {
+        position: absolute;
+        bottom: 10px;
+        left: 50%;
+        width: fit-content;
+        object-fit: cover;
+        aspect-ratio: 2/1;
+        animation: _90sAnim infinite 1s alternate-reverse ease-in-out;
+    
+        color: aquamarine;
+        font-size: 50px;
+    }
+}
+
+@keyframes spinner {
+    0% {
+        transform: rotateY(0deg);
+    }
+
+    100% {
+        transform: rotateY(360deg);
+    }
+}
+
+@keyframes _90sAnim {
+    0% {
+        transform: translateX(-40%) translateY(10px) rotateZ(0deg) rotateY(0deg);
+    }
+
+    100% {
+        transform: translateX(-60%) translateY(-10px) rotateZ(30deg) rotateY(360deg);
+    }
+}
