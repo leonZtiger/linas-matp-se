@@ -1,0 +1,37 @@
+[
+    {
+        "name": "Global matglädje",
+        "customer": "Internationella företag och privatkunder",
+        "description": "Ett projekt som syftade till att sprida Linas Matpåses koncept till andra världsdelar genom lokala samarbeten.",
+        "otherInformation": "Fokus låg på att anpassa matkassarna till olika matkulturer, så kunderna fick både igenkänning och nya smakupplevelser.",
+        "image": ["pr1.jpg", "pr2.jpg", "pr3.jpg", "pr4.jpg"]
+    },
+    {
+        "name": "Grönare gårdar",
+        "customer": "Miljömedvetna kunder i Sverige och Norden.",
+        "description": "Bondgårdarna som levererar råvaror till matkassarna gick över till ekologiska odlingsmetoder.",
+        "otherInformation": "Projektet gav möjlighet att marknadsföra matkassarna som ett mer hållbart val, vilket stärkte varumärket.",
+        "image": ["bildFarm1.png", "bildFarm2.jpg", "bildFarm3.jpg", "bildFarm4.jpg", "bildFarm5.jpg"]
+    },
+    {
+        "name": "Mat som gör skillnad",
+        "customer": "Indirekt de behövande via soppkök, men också befintliga kunder som vill bidra till minskat matsvinn",
+        "description": "Överbliven mat från lager och leveranser donerades till lokala soppkök istället för att slängas.",
+        "otherInformation": "Projektet minskade matsvinnet kraftigt och stärkte Linas Matpåses sociala engagemang.",
+        "image": ["sopp1.jpg", "sopp2.jpg"]
+    },
+    {
+        "name": "Expresspåsen",
+        "customer": "Stressade familjer och yrkespersoner med lite tid",
+        "description": "En ny logistiklösning som gjorde det möjligt att få sin matkasse levererad inom bara några timmar.",
+        "otherInformation": "Projektet krävde investeringar i smartare ruttplanering och fler lokala distributionslager.",
+        "image": ["leverans1.jpg", "leverans2.jpg"]
+    },
+    {
+        "name": "Den digitala kocken",
+        "customer": "Matintresserade kunder som vill utvecklas i köket.",
+        "description": "En digital matlagningsskola med videolektioner, livesända events och steg-för-steg-recept.",
+        "otherInformation": "Projektet skapade starkare kundlojalitet och ökade användningen av företagets digitala plattform.",
+        "image": ["office2.jpg", "office3.jpg", "office4.jpg"]
+    }
+]

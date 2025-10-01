@@ -1,0 +1,356 @@
+body {
+    background-color: #FFF0F0;
+    overflow-x: hidden;
+}
+
+.titelAnstalld {
+    font-family: "montserrat", sans-serif;
+    font-weight: 600;
+    text-align: center;
+    color: #2f4f4f;
+
+}
+
+img#bild1 {
+    width: 100%;
+    margin: 1em auto;
+    border-radius: 5px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    object-fit: cover;
+}
+
+#aboutText {
+    width: 100%;
+    font-family: "poppins", sans-serif;
+    margin: 1em 0.5em;
+    font-weight: 300;
+}
+
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 16px;
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 1em;
+    box-sizing: border-box;
+}
+
+.skillsContainer {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+
+.skills {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.skillItem {
+    text-align: center;
+}
+
+.innerCircle {
+    width: 90px;
+    height: 90px;
+    background: #fff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 1rem;
+    color: #333;
+}
+
+.label {
+    margin-top: 5px;
+     font-weight: 500;
+    font-size: 0.9rem;
+    text-align: center;
+}
+
+.skills:hover {
+    transform: scale(1.03);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.bar1 {
+    background: conic-gradient(#B88E8E 0deg 324deg, #eee 324deg 360deg);
+    animation: fillbar ease-in 2s;
+}
+
+.bar2 {
+    background: conic-gradient(#B88E8E 0deg 270deg, #eee 270deg 360deg);
+    animation: fillbar ease-in 3s;
+}
+
+.bar3 {
+    background: conic-gradient(#B88E8E 0deg 180deg, #eee 180deg 360deg);
+    animation: fillbar ease-in 4s;
+}
+
+.bar4 {
+    background: conic-gradient(#B88E8E 0deg 162deg, #eee 162deg 360deg);
+    animation: fillbar ease-in 5s;
+}
+
+@keyframes fillbar {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.searchContainer {
+    position: relative;
+    justify-content: center;
+    text-align: center;
+}
+
+.search-in {
+    display: inline-block;
+    justify-content: center;
+    margin: 0 30% 0 30%;
+    position: relative;
+    border-radius: 8px;
+    width: 37%;
+    outline: none;
+    font-family: "poppins", sans-serif;
+}
+
+.search-btn {
+    display: inline;
+    justify-content: center;
+    position: absolute;
+    right: 32%;
+    border: none;
+    background: transparent;
+    transition: 0.4s;
+}
+
+.search-btn:hover {
+    transform: translateY(-2px) scale(1.4);
+}
+
+.rBtn {
+    display: inline-block;
+    justify-content: center;
+    position: absolute;
+    right: 20%;
+    padding: 0.3em;
+    border-radius: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    color: #130202;
+    background-color: transparent;
+    border: 2px solid transparent;
+    transition: all 0.3s ease;
+}
+
+.rBtn:hover {
+    transform: translateY(-2px);
+}
+
+.accordion {
+    background-color: #225A2C;
+    color: #fff;
+    cursor: pointer;
+    outline: none;
+    transition: all 0.3s ease;
+    padding: 0.75em 1.25em;
+    width: auto;
+    margin-left: auto;
+    margin-right: 1em;
+    margin-bottom: 1em;
+    border-radius: 25px;
+    border: none;
+    display: block;
+    text-align: right;
+    background: linear-gradient(135deg, #2e8b57, #3aa65c);
+    border: 2px solid transparent;
+}
+
+.accordion:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.25);
+    background: linear-gradient(135deg, #3aa65c, #2e8b57);
+}
+
+.panelContainer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+
+.panel {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.55);
+    backdrop-filter: blur(6px);
+    z-index: 100;
+    font-family: "poppins", sans-serif;
+    color: #F3E4DC;
+    font-weight: 400;
+    cursor: pointer;
+    text-align: center;
+}
+
+.close-btn {
+    position: absolute;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    top: 5px;
+    right: 5px;
+    font-size: 20px;
+
+}
+
+.slide-btn {
+    position: absolute;
+    margin: 0 10px 0px 0;
+    background-color: transparent;
+    font-size: 35px;
+    font-weight: 500;
+    cursor: pointer;
+    outline: none;
+    bottom: 1%;
+    border: none;
+    color: var(--text);
+    transition: 0.4s;
+}
+
+.slide-btn.left {
+    left: 25%;
+}
+
+
+.slide-btn.right {
+    right: 25%;
+}
+
+.slide-btn.left:hover,
+.slide-btn.right:hover {
+    background-color: transparent;
+    transform: translateY(-2px);
+
+}
+
+.slideShow {
+    display: inline-block;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.slideImg {
+    position: relative;
+    width: 100%;
+    height: 250px;
+    max-width: 300px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+    object-fit: cover;
+}
+
+.slideImg:hover {
+    transform: scale(1.03);
+}
+
+@media only screen and (min-width: 800px) {
+
+    .grid-container {
+        grid-template-columns: 1fr 2fr;
+        max-width: 1100px;
+        margin: 1em auto;
+        gap: 20px;
+    }
+
+    .skillsContainer {
+        margin-top: 10%;
+    }
+
+    .item1 {
+        grid-column: 1 / span 2;
+    }
+
+    .item2 {
+        grid-row: 2;
+        grid-column: 1;
+    }
+
+    .item3 {
+        grid-row: 2;
+        grid-column: 2;
+    }
+
+    .item4 {
+        grid-column: 1 / span 2;
+        grid-row: 3;
+    }
+
+    .item5 {
+        grid-column: 1 / span 2;
+        grid-row: 4;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .searchContainer {
+        position: relative;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .search-in {
+        margin: 0 40% 0 40%;
+        padding: 0.5em;
+        width: 17%;
+    }
+
+    .search-btn {
+        padding: 0.5em;
+        right: 43%;
+    }
+
+    .rBtn {
+        right: 59%;
+        margin: 0;
+    }
+
+    .panel {
+        top: 70px;
+    }
+
+    .slide-btn.left {
+        left: 40%;
+    }
+
+
+    .slide-btn.right {
+        right: 40%;
+    }
+}

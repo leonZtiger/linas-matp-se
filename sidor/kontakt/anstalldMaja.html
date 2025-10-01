@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="anstalldMaja.css" rel="stylesheet">
+    <link href="theme.css" rel="stylesheet">
+    <title>Våra anställda</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poetsen+One&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Sacramento&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poetsen+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Sacramento&display=swap"
+        rel="stylesheet">
+    <script src="main.js" defer></script>
+    <script src="projects.json" defer></script>
+    <script src="anstalldMaja.js" defer></script>
+
+
+
+</head>
+
+<body onload="loadContent()">
+    <div id="header"></div>
+
+    <div class="grid-container">
+
+        <div class="grid-item item1">
+            <h2 class="titelAnstalld">Anna Andersson - projektledare</h2>
+        </div>
+        <div class="grid-item item2"><img src="img/office9.jpg" alt="bild" id="bild1"></div>
+        <div class="grid-item item3" id="aboutText">
+            <p>Anna, 34 år, arbetar som projektledare på Linas Matpåse i Örebro.
+                Hon började på företaget för två år sedan och
+                uppskattar särskilt den dagliga kontakten med kunderna.
+            </p>
+            <p>Med sitt varma bemötande och sitt smittande leende blir varje projekt mer än bara en matkasse – det blir
+                ett positivt möte.
+                Anna brinner för god service och hållbarhet, och hon tycker att det känns meningsfullt att vara en del
+                av ett företag som gör vardagen enklare för familjer.</p>
+
+            <div class="skillsContainer">
+                <div class="skillItem">
+                    <div class="skills bar1">
+                        <div class="innerCircle">90%</div>
+                    </div>
+                    <div class="label">Initiativförmåga</div>
+                </div>
+                <div class="skillItem">
+                    <div class="skills bar2">
+                        <div class="innerCircle">75%</div>
+                    </div>
+                    <div class="label">Ledarskap</div>
+                </div>
+                <div class="skillItem">
+                    <div class="skills bar3">
+                        <div class="innerCircle">50%</div>
+                    </div>
+                    <div class="label">Kreativitet</div>
+                </div>
+                <div class="skillItem">
+                    <div class="skills bar4">
+                        <div class="innerCircle">45%</div>
+                    </div>
+                    <div class="label">Envishet</div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="grid-item item4">
+            <h3 class="titelAnstalld">Annas projekt</h3>
+            <div id="searchContainer"></div>
+        </div>
+        <div id="projectContainer" class="grid-item item5 panelContainer">
+        </div>
+    </div>
+    <div class="site-footer" id="footer"></div>
+
+</body>
+
+</html>
