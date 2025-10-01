@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "Titel": "Smarta Receptrekommendationer",
+    "Kund": "Kund 1",
+    "Beskrivning": "Alexandra utvecklar en AI-driven funktion som analyserar kundens tidigare beställningar, allergier och kostpreferenser för att generera personliga receptförslag. Recepten anpassas efter säsongens råvaror och innehållet i kundens matkasse. Målet är att minska matsvinnet genom att inspirera kunder att använda alla ingredienser de får levererade. Funktionen integreras direkt på Linas Matpåses hemsida och i appen, och erbjuder även tips för att lagra och kombinera råvaror på bästa sätt."
+  },
+  {
+    "id": 2,
+    "Titel": "Smart portionsoptimering",
+    "Kund": "Kund 2",
+    "Beskrivning": "Ett system som automatiskt justerar portionerna i matkassarna baserat på hushållets storlek och kundens feedback om tidigare leveranser. Genom att analysera data om vad kunder faktiskt använder, kan systemet föreslå mer exakta mängder och minska överbliven mat. Projektet inkluderar även en feedback-loop där kunder enkelt kan rapportera om portionerna var för stora eller små, vilket kontinuerligt förbättrar precisionen. Målet är att öka kundnöjdheten och minska matsvinnet."
+  },
+  {
+    "id": 3,
+    "Titel": "Leveransspårning i realtid",
+    "Kund": "Kund 3",
+    "Beskrivning": "En interaktiv karta som ger kunder möjlighet att följa sin matkasse i realtid, från lager till dörren. Kunder får uppdateringar om leveransstatus, uppskattad ankomsttid och eventuella förseningar. Systemet integreras med kundens befintliga logistikplattform och använder GPS-data för att ge exakta positioner. Kunder kan även få notiser om leveransen är på väg, vilket ökar transparensen och förtroendet för tjänsten."
+  },
+  {
+    "id": 4,
+    "Titel": "Hållbarhetsdashboard",
+    "Kund": "Kund 4",
+    "Beskrivning": "Ett visuellt dashboard som visar kundens miljöpåverkan, såsom CO₂-besparingar tack vare säsongsbetonade råvaror och återvunna förpackningar. Dashboardet ger även tips på hur kunden kan göra ännu mer hållbara val, t.ex. genom att välja vegetariska alternativ eller samla beställningar för färre leveranser. Genom att visualisera data på ett pedagogiskt sätt uppmuntras kunder att ta medvetna beslut och bidra till en mer hållbar konsumtion. Dashboardet är anpassat för appens användargränssnitt."
+  },
+  {
+    "id": 5,
+    "Titel": "AI-chatbot för kundsupport",
+    "Kund": "Kund 5",
+    "Beskrivning": "En AI-driven chatbot som hanterar vanliga frågor om beställningar, leveranser och recepttips. Chatboten är tränad på kundtjänstdata och kan ge snabba, korrekta svar dygnet runt. Den kan även föreslå recept baserat på kundens senaste beställning eller hjälpa till med returer och reklamationer. Målet är att minska belastningen på kundtjänst och förbättra kundupplevelsen genom att erbjuda omedelbar hjälp. Chatboten integreras i appen och på hemsidan."
+  }
+]

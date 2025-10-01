@@ -1,0 +1,74 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--text);
+}
+
+#contact {
+    font-family: "poppins", sans-serif;
+    font-weight: 400;
+    text-align: center;
+}
+
+form {
+    font-family: "poppins", sans-serif;
+    text-align: center;
+    margin: auto;
+    margin-bottom: 2em;
+    background-color: white;
+    width: 35%;
+    border-radius: 8px;
+    padding: 1em;
+}
+
+label {
+    text-align: left;
+}
+
+input,
+textarea {
+    font-family: "poppins", sans-serif;
+    width: 80%;
+    height: 1.5em;
+    border-radius: 8px;
+    outline: none;
+    border: 1px solid #ccc;
+}
+
+#submitButton {
+    background-color: var(--secondary);
+    border-radius: 8px;
+    width: 80%;
+    border: none;
+    padding: 0.75rem;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+#submitButton:hover {
+    background-color: #4a9466;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+#submitButton:active {
+    transform: translateY(0);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.error {
+    display: block;
+    color: red;
+    font-family: "poppins", sans-serif;
+    font-style: italic;
+    font-size: 0.75em;
+    padding: 0.5em;
+    margin: 0.5em;
+}
+
+@media only screen and (max-width: 800px) {
+    form {
+        width: 60%;
+    }
+}
