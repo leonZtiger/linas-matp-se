@@ -1,66 +1,20 @@
 body {
-    font-family: "poppins", sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #FFD5D5;
-}
-
-header {
-    background-color: #3A6F43;
-    text-align: center;
-    margin: auto;
-    border-bottom: 4px solid #59AC77;
-}
-
-h1 {
-    font-family: "sacramento", sans-serif;
-    color: #FFD5D5;
-    font-weight: 150;
-    font-size: 3em;
+    background-color: var(--text);
 }
 
 #contact {
+    font-family: "poppins", sans-serif;
     font-weight: 400;
     text-align: center;
 }
 
-.menu {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.menuLeft,
-.menuRight {
-    list-style: none;
-    display: flex;
-    gap: 0.5em;
-    margin: 0;
-    padding: 0;
-}
-
-.menu li {
-    font-family: "Poetsen One", sans-serif;
-    font-size: 1em;
-    display: inline-block;
-    padding: 0.2rem 1.5rem;
-    color: #FFD5D5;
-    border-radius: 10px;
-    cursor: pointer;
-    transition: all 0.3s ease;
-}
-
-.menu li:hover {
-    background-color: #59AC77;
-}
-
-#menuToggle {
-    display: none;
-}
-
 form {
+    font-family: "poppins", sans-serif;
     text-align: center;
     margin: auto;
+    margin-bottom: 2em;
     background-color: white;
     width: 35%;
     border-radius: 8px;
@@ -82,7 +36,7 @@ textarea {
 }
 
 #submitButton {
-    background-color: #59AC77;
+    background-color: var(--secondary);
     border-radius: 8px;
     width: 80%;
     border: none;
@@ -103,107 +57,18 @@ textarea {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
-footer {
-    background-color: #3A6F43;
-    padding: 2em;
-    margin-top: 3em;
-    margin-bottom: 0;
-    display: grid;
-    grid-template-columns: repeat(3, auto);
-    gap: 10em;
-    border-top: 4px solid #59AC77;
-    justify-content: center;
-}
-
-.footerMenu {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-.footerMenu li {
-    color: #FFD5D5;
-    font-size: 0.6em;
-    font-weight: 300;
-    margin-bottom: 0.5em;
-    text-align: left;
-    padding: 0.5em;
-}
-
-.tabellRubrik {
-    font-family: "Poetsen One", sans-serif;
-    font-weight: 500;
-    font-size: 2em;
-    padding: 1em;
-}
-
 .error {
     display: block;
     color: red;
-    font-weight: 200;
+    font-family: "poppins", sans-serif;
     font-style: italic;
-}
-
-#menuIcon {
-    display: none;
-}
-
-.menuSmallScreen {
-    display: none;
-    list-style: none;
-    font-family: "Poetsen One", sans-serif;
-    flex-direction: column;
-    background-color: #3A6F43;
-    color: #FFD5D5;
-    position: absolute;
-    top: 3.5rem;
-    right: 1rem;
-    padding: 1em;
-    border-radius: 4px;
-    gap: 1em;
-    cursor: pointer;
-    box-shadow: 0 2px 4px rgba(0, 0, 0.5, 0.2);
-}
-
-.menuSmallScreen li:hover {
-    background-color: #59AC77;
-    border-radius: 4px;
-    transform: translateY(0);
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    font-size: 0.75em;
+    padding: 0.5em;
+    margin: 0.5em;
 }
 
 @media only screen and (max-width: 800px) {
-
-    .menu {
-        display: none;
-    }
-
-    #menuIcon {
-        display: block;
-        font-size: 1.5em;
-        cursor: pointer;
-        text-align: right;
-    }
-
-    #menuToggle:checked+#menuIcon+.menuSmallScreen {
-        display: flex;
-    }
-
-    h1 {
-        font-weight: 200;
-    }
-
     form {
         width: 60%;
-    }
-
-    footer {
-        grid-template-columns: 1fr;
-        gap: 2em;
-        text-align: center;
-    }
-
-    .footerMenu {
-        text-align: center;
     }
 }
