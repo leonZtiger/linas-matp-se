@@ -1,0 +1,28 @@
+
+[
+   {
+  "titel": "Hälsosam Vardagskasse",
+  "kund": "Familjen Svensson",
+  "beskrivning": "Utveckling av en ny matkasse med fokus på snabba, näringsrika recept för barnfamiljer med lite tid i vardagen."
+},
+{
+  "titel": "Veckomeny för Seniorboende",
+  "kund": "Solgläntans Äldreboende",
+  "beskrivning": "Skräddarsydd matkasse och veckomeny anpassad efter äldres behov och kostrekommendationer."
+},
+{
+  "titel": "Veganska Smakresan",
+  "kund": "Emma & Linus",
+  "beskrivning": "Pilotprojekt för att testa en ny vegansk matkasse med internationella smaker under fyra veckor."
+},
+{
+  "titel": "Lunchkasse till Kontoret",
+  "kund": "Techify AB",
+  "beskrivning": "Leverans av färdigplanerade lunchkassar till techföretagets personal, inklusive enkla tillagningsinstruktioner och allergianpassning."
+},
+{
+  "titel": "Måltidsoptimering med AI",
+  "kund": "Linas Matpåse (internt)",
+  "beskrivning": "Internt projekt för att utveckla ett AI-verktyg som optimerar inköp och recept baserat på säsong, pris och kundpreferenser."
+}
+]

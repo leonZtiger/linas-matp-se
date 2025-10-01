@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="main.js" defer></script>
+    <script src="/sidor/fredrik.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="theme.css">
+    <link rel="stylesheet" href="fredrik.css">
+    <title>Fredriks sida</title>
+</head>
+
+<body onload="loadContent()">
+    <div id="header"></div>
+       <div class="profil-sektion">
+        <img src="/bilder/chatgpt-image-2025-09-29.png" alt="Profilbild" class="profilbild">
+        <div class="presentation">
+            <h2>Fredrik</h2>
+            <p>
+                Fredrik är 26 år och arbetar som ekonomiansvarig på företaget. Han har en stark känsla för struktur, ordning och noggrannhet och ser till att företagets ekonomi alltid är i balans. Med sitt engagemang och sin analytiska förmåga bidrar han till trygga beslut och långsiktig hållbarhet i verksamheten.
+            </p>
+        </div>
+    </div>
+    <div class="slideshow-container">
+        <div class="slides">
+            <img src="/bilder/bild1.jpg" alt="Bild 1">
+        </div>
+        <div class="slides">
+            <img src="/bilder/bild2.jpg" alt="Bild 2">
+        </div>
+        <div class="slides">
+            <img src="/bilder/bild3.jpg" alt="Bild 3">
+        </div>
+        <div class="slides">
+            <img src="/bilder/bild4.jpg" alt="Bild 4">
+        </div>
+        <div class="slides">
+            <img src="/bilder/bild5.jpg" alt="Bild 5">
+        </div>
+
+        <button id="prevBtn" type="button">Previous</button>
+        <button id="nextBtn" type="button">Next</button>
+
+    </div>
+    <h2 class="projekt-rubrik">Projekt Fredrik ansvarat för</h2>
+    <div class="text-content" id="textContentContainer"></div>
+    <div id="footer"></div>
+</body>
+
+</html>

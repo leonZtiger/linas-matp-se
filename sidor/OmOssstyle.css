@@ -1,0 +1,130 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+
+header {
+    background-color: #ffffff;
+    padding: 32px;
+}
+
+.nav-container {
+   max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    padding: 0 32px;
+}
+
+.nav-left,
+.nav-right {
+    display: flex;
+    gap: 20px;
+}
+
+.logo {
+    font-family: "Dancing script", cursive;
+    font-size: 36px;
+    font-weight: normal;
+    color: #000;
+    text-decoration: none;
+    user-select: none;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+
+a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    font-weight: 14px;
+}
+
+a:hover {
+    color: #000;
+}
+
+.about {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.about h1 {
+    font-size: 32px;
+    margin-bottom: 32px;
+}
+
+.about-images {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    margin-bottom: 32px;
+    flex-wrap: wrap;
+}
+
+.about-images img {
+    width: 300px;
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.about-text {
+    max-width: 800px;
+    margin: 0 auto;
+    font-size: 18px;
+    line-height: 1.6;
+    color: #333;
+    margin-bottom: 60px;
+}
+
+.employees {
+    text-align: center;
+    padding: 60px 20px;
+    background-color: #f7c6c7;
+}
+
+.employees h2 {
+    font-size: 32px;
+    margin-bottom: 40px;
+    color: #333;
+}
+
+.employee-grid {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 32px;
+}
+
+.employee-card {
+    background-color: #7BAF8F;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    padding: 16px;
+    width: 220px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease;
+}
+
+.employee-card:hover {
+    transform: translateY(-5px);
+}
+
+.employee-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+.employee-name {
+    margin-top: 12px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #333;
+}
