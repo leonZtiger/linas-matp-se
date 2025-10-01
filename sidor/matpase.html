@@ -5,18 +5,236 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="main.js" defer></script>
-    <link href="theme.css" rel="stylesheet"/>
+    <link href="theme.css" rel="stylesheet" />
+    <link href="matpase.css" rel="stylesheet" />
+
 </head>
 
 <body onload="loadContent()">
 
     <!-- Header with inserted html from main.js -->
     <div id="header"></div>
-    
-    
+
+    <main class="bags-page">
+        <!-- Hero section, stor bild med info över-->
+        <section class="hero" aria-label="Hero">
+            <div class="hero__inner">
+                <h1 class="sacramento-regular">Linas Matpåse</h1>
+                <p>Välj en matkasse som passar ditt liv. Färska råvaror, tydliga recept och leverans direkt till
+                    dörren—så blir middagen både enkel och god.</p>
+
+                <div class="hero__cta">
+                    <button class="btn" data-scroll="#bags">Utforska matkassar</button>
+                    <button class="btn btn--ghost" data-scroll="#how">Så funkar det</button>
+                </div>
+
+                <div class="hero__chips">
+                    <span class="chip">Klara på 20–30 min</span>
+                    <span class="chip">Vegetariskt & familjevänligt</span>
+                    <span class="chip">Flexibel prenumeration</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Kraftfull titel! -->
+        <section class="statement" aria-label="Intro">
+            <h2 class="accent">Enkelt, varierat och gott – varje vecka</h2>
+            <p>Våra matkassar är designade för att spara tid utan att tumma på smak eller kvalitet.</p>
+        </section>
+
+        <!-- Filter knappar -->
+        <section class="chips-row" aria-label="Kategorier">
+            <button class="chip chip--filter" aria-pressed="true">Alla</button>
+            <button class="chip chip--filter">Familj</button>
+            <button class="chip chip--filter">Vegetariskt</button>
+            <button class="chip chip--filter">Snabbt</button>
+            <button class="chip chip--filter">Balans</button>
+            <button class="chip chip--filter">Vardagslyx</button>
+        </section>
+
+        <!-- Menu av recept -->
+        <section id="bags" class="bags">
+            <div class="bags__grid">
+                <!-- Ett recept, en detail tag -->
+                <details class="bag">
+                    <summary>
+                        <figure class="thumb">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/a/a9/Making_stock_for_pho_bo.jpg"/>
+                        </figure>
+                        <div class="title">
+                            <h3>Familjekassen</h3>
+                            <div class="meta">
+                                <span class="pill">5 recept</span>
+                                <span class="pill">4 portioner</span>
+                                <span class="pill">Barnvänlig</span>
+                            </div>
+                        </div>
+                        <div class="price">
+                            <span class="amount">fr. 699 kr</span>
+                        </div>
+                    </summary>
+                    <div class="recipes">
+                        <ul>
+                            <li>Krämig pasta med kyckling & ärtor</li>
+                            <li>Tacos med mild salsasås</li>
+                            <li>Ugnslax med citron & potatis</li>
+                            <li>Köttbullar med gräddsås</li>
+                            <li>Vegetarisk lasagne</li>
+                        </ul>
+                    </div>
+                </details>
+
+                <details class="bag">
+                    <summary>
+                        <figure class="thumb">
+                            <img src="https://media.istockphoto.com/id/1433432507/photo/healthy-eating-plate-with-vegan-or-vegetarian-food-in-woman-hands-healthy-plant-based-diet.jpg?s=612x612&w=0&k=20&c=kQBPg4xNIiDMZ-Uu2r37OHZDQSaRroZlxo_YLioh5tA=" alt="Vegokassen – färgglada vegetariska rätter" />
+                        </figure>
+                        <div class="title">
+                            <h3>Vegokassen</h3>
+                            <div class="meta">
+                                <span class="pill">4 recept</span>
+                                <span class="pill">2–4 portioner</span>
+                                <span class="pill">Vegetariskt</span>
+                            </div>
+                        </div>
+                        <div class="price">
+                            <span class="amount">fr. 589 kr</span>
+                        </div>
+                    </summary>
+                    <div class="recipes">
+                        <ul>
+                            <li>Halloumistroganoff</li>
+                            <li>Rostad blomkål med tahinisås</li>
+                            <li>Vegobullar & mos</li>
+                            <li>Linscurry med naan</li>
+                        </ul>
+                    </div>
+                </details>
+
+                <details class="bag">
+                    <summary>
+                        <figure class="thumb">
+                            <img src="https://images.pexels.com/photos/1438672/pexels-photo-1438672.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Snabbkassen – snabba vardagsrätter" />
+                        </figure>
+                        <div class="title">
+                            <h3>Snabbkassen</h3>
+                            <div class="meta">
+                                <span class="pill">3–4 recept</span>
+                                <span class="pill">2–4 portioner</span>
+                                <span class="pill">Klara på 20 min</span>
+                            </div>
+                        </div>
+                        <div class="price">
+                            <span class="amount">fr. 499 kr</span>
+                        </div>
+                    </summary>
+                    <div class="recipes">
+                        <ul>
+                            <li>One-pan gnocchi med pesto</li>
+                            <li>Stekt lax med snabb citronsås</li>
+                            <li>Quesadillas med bönröra</li>
+                            <li>Krämig svamppasta</li>
+                        </ul>
+                    </div>
+                </details>
+
+                <details class="bag">
+                    <summary>
+                        <figure class="thumb">
+                            <img src="https://media.istockphoto.com/id/1430849921/photo/order-of-tacos-closeup.jpg?s=612x612&w=0&k=20&c=iikaCYoxa9ji21dqzvOZ6B14vrQn4A7ZrtCuYqf1KYM=" alt="Lågkolhydratkasse – fräscha gröna rätter" />
+                        </figure>
+                        <div class="title">
+                            <h3>Lågkolhydrat</h3>
+                            <div class="meta">
+                                <span class="pill">4 recept</span>
+                                <span class="pill">2–4 portioner</span>
+                                <span class="pill">Balans & energi</span>
+                            </div>
+                        </div>
+                        <div class="price">
+                            <span class="amount">fr. 639 kr</span>
+                        </div>
+                    </summary>
+                    <div class="recipes">
+                        <ul>
+                            <li>Kyckling med rostade grönsaker & aioli</li>
+                            <li>Zoodles med räkor & vitlök</li>
+                            <li>Fyllda paprikor med tacofärs</li>
+                            <li>Torsk med örtmajonnäs</li>
+                        </ul>
+                    </div>
+                </details>
+
+                <details class="bag">
+                    <summary>
+                        <figure class="thumb">
+                            <img src="https://media.istockphoto.com/id/637161258/photo/delicate-medallions-of-veal-with-vegetables.jpg?s=612x612&w=0&k=20&c=BKfpQXJHkXRd91332fwoKFRe6mmvl9d64Heh5YIwB10=" alt="Vardagslyx – lite extra gott mitt i veckan" />
+                        </figure>
+                        <div class="title">
+                            <h3>Vardagslyx</h3>
+                            <div class="meta">
+                                <span class="pill">3 recept</span>
+                                <span class="pill">2 portioner</span>
+                                <span class="pill">Extra gott</span>
+                            </div>
+                        </div>
+                        <div class="price">
+                            <span class="amount">fr. 549 kr</span>
+                        </div>
+                    </summary>
+                    <div class="recipes">
+                        <ul>
+                            <li>Oxfilépasta med tryffel</li>
+                            <li>Smörstekt torsk med brynt smör</li>
+                            <li>Risotto med svamp & parmesan</li>
+                        </ul>
+                    </div>
+                </details>
+
+            </div>
+        </section>
+
+        <!-- Hur det funkar del -->
+        <section id="how" class="how" aria-label="Så funkar det">
+            <div class="how__grid">
+                <div class="step">
+                    <img src="https://img.freepik.com/premium-vector/choose-concept-illustration_114360-563.jpg" alt="Välj kasse" />
+                    <h3>1. Välj kasse</h3>
+                    <p>Hitta din favorit – familj, vego, snabbt eller lyx.</p>
+                </div>
+                <div class="step">
+                    <img src="https://www.reshot.com/preview-assets/illustrations/TMQS7XFPNY/delivery-company-service-TMQS7XFPNY-w600.jpg" alt="Hemleverans" />
+                    <h3>2. Hemleverans</h3>
+                    <p>Råvaror i rätt mängd levereras direkt till dörren.</p>
+                </div>
+                <div class="step">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYvVPvdfYAlSpZK_kGJWL4FmQt-sMb4M4RMg&s" alt="Laga & njut" />
+                    <h3>3. Laga & njut</h3>
+                    <p>Följ enkla recept och njut av goda middagar.</p>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="testimonial">
+            <blockquote>
+                “Bästa hjälpen i vardagen—barnen älskar variationen och vi sparar massor av tid.”
+            </blockquote>
+            <p class="author">— Karin, Örebro</p>
+        </section>
+
+        <section class="cta-banner">
+            <div class="cta__content">
+                <h3>Klara middagar varje vecka</h3>
+                <p>Testa Linas Matpåse – avsluta när som helst.</p>
+                <button class="btn">Prova från 499 kr</button>
+            </div>
+            <img src="https://images.bast-i-test.se/matkasse-bast-i-test.webp?fit=clip&w=776&auto=format,compress&ts=1" alt="Matkasse på köksbänk" />
+        </section>
+
+    </main>
 
     <!-- Footer with inserted html from main.js -->
     <div id="footer"></div>
 </body>
-
 </html>
