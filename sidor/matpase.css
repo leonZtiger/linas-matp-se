@@ -71,8 +71,7 @@ body{
 /* ===== BAGS GRID (max 3 columns) ===== */
 .bags{
   max-width: var(--max); margin: 18px auto 60px; padding: 0 18px;
-  height: 60vh;
-
+  
   .bags__grid{
     display: grid;
     grid-template-columns: repeat(1, minmax(0, 1fr));
