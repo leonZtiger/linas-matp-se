@@ -8,7 +8,7 @@
     <link href="alexandra.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap" rel="stylesheet">
     <script defer src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
-    <script defer src="vue.js"></script>
+    <script defer src="alexandraVue.js"></script>
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <script src="alexandra.js" defer></script>
     <meta name="theme-color" content="#424242">
@@ -35,6 +35,35 @@
             <img src="img/employee-image.jpg" alt="An employee">
         </div>
         <div class="grid-item item2">
+            <h2>Kompetenser</h2>
+            <div class="skill-container">
+                <p>html</p>
+                <div class="skill">
+                    <div class="skill-fill" data-level="90">
+                        90%
+                    </div>
+                </div>
+            </div>
+
+            <div class="skill-container">
+                <p>CSS</p>
+                <div class="skill">
+                    <div class="skill-fill" data-level="80">
+                        80%
+                    </div>
+                </div>
+            </div>
+
+            <div class="skill-container">
+                <p>Javascript</p>
+                <div class="skill">
+                    <div class="skill-fill" data-level="60">
+                        60%
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="grid-item item3">
             <p>Alexandra är en passionerad systemutvecklare med fokus på att skapa smidiga och användarvänliga digitala
                 lösningar. På Linas Matpåse arbetar hon med att utveckla och förbättra företagets hemsida, så att kunder
                 enkelt kan beställa och få sina matkassar levererade utan problem. Med en bakgrund inom både frontend-
@@ -60,11 +89,13 @@
     <div id="app">
         <h2>Pågående projekt</h2>
         <p>Antal projekt: {{numberOfProjects}}</p>
-
         <input type="text" v-model="filterProjects" placeholder="Sök efter projekt">
-        {{filterProjects}}
+        <button v-on:click="sortByTitle">
+            {{sortBy ? 'Återställ ordning' : 'Sortera efter titel'}}
+        </button>
         <!-- <div v-for="project in projects" :key="project.id" class="project"> -->
-        <div v-for="project in projectSearch" :key="project.id" class="project">
+        <!-- <div v-for="project in projectSearch" :key="project.id" class="project"> -->
+        <div v-for="project in projectSearchAndSort" :key="project.id" class="project">
             <div class="column1">
                 <p>{{project.Titel}}</p>
             </div>

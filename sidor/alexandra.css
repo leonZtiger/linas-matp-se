@@ -164,13 +164,59 @@ img.displayPhoto {
     background-color: darkgrey;
 }
 
+.skill-container {
+    margin-bottom: 15px;
+}
+
+.skill {
+    width: 100%;
+    height: 20px;
+    background-color: white;
+    border-radius: 5%;
+    overflow: hidden; 
+}
+
+.skill-fill {
+    height: 100%;
+    background-color: #4CAF50;
+    border-radius: 5px;
+    text-align: right; 
+    padding-right: 5px;
+    color: black;
+    line-height: 20px;
+    width: 0%;
+}
+
+.skill-fill[data-level="90"] {
+    --target-width: 90%;
+    animation: incr-width 1.5s forwards;
+}
+
+.skill-fill[data-level="80"] {
+    --target-width: 80%;
+    animation: incr-width 1.5s forwards;
+}
+
+.skill-fill[data-level="60"] {
+    --target-width: 60%;
+    animation: incr-width 1.5s forwards;
+}
+
+@keyframes incr-width {
+    from {
+        width: 0%;
+    } to {
+        width: var(--target-width);
+    }
+}
+
 @media only screen and (min-width: 850px) {
     .item1 {
         grid-row: 1;
         grid-column: 1;
     }
 
-    .item2 {
+    .item3 {
         grid-row: 1;
         grid-column: 2;
     }
