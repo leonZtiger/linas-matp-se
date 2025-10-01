@@ -75,7 +75,7 @@ fetch('projects.json')
             let currentImg = 0
 
             const img = document.createElement('img')
-            img.src = 'img/' + project.image[currentImg]
+            img.src = 'bilder/' + project.image[currentImg]
             img.classList.add('slideImg')
             slideContainer.appendChild(img)
 
@@ -90,7 +90,7 @@ fetch('projects.json')
             prevBtn.addEventListener('click', () => {
                 if (currentImg > 0) {
                     currentImg = currentImg - 1
-                    img.src = 'img/' + project.image[currentImg]
+                    img.src = 'bilder/' + project.image[currentImg]
                     imgCounter.innerText = `${currentImg + 1} / ${project.image.length}`
                 }
 
@@ -100,7 +100,7 @@ fetch('projects.json')
             nextBtn.classList.add('slide-btn', 'right')
             nextBtn.addEventListener('click', () => {
                 currentImg = (currentImg + 1) % project.image.length
-                img.src = 'img/' + project.image[currentImg]
+                img.src = 'bilder/' + project.image[currentImg]
                 imgCounter.innerText = `${currentImg + 1} / ${project.image.length}`
             })
 
