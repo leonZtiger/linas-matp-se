@@ -29,7 +29,7 @@ document.getElementById('nextBtn').addEventListener('click', () => {
 showSlide(currentSlide);
 
 // Hämta och visa projekt-data
-axios.get('/fredriksProjekt/projekt.json') // eller .json
+axios.get('/fredriksProjekt/projekt.json') 
   .then(response => {
     const data = response.data;
     const container = document.getElementById('textContentContainer');
