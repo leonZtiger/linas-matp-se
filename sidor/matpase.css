@@ -1,5 +1,4 @@
 :root {
-  /* page-only helpers */
   --surface: color-mix(in oklab, var(--primar) 85%, black 15%);
   --chipBg: rgba(255, 255, 255, .14);
   --max: 1200px;
@@ -11,6 +10,7 @@
   padding: 64px 18px 48px;
   text-align: center;
   overflow: hidden;
+  /* flera lager bakgrund med mörk overlay bild och gradient som fallback */
   background:
     linear-gradient(180deg, rgba(0, 0, 0, .35), rgba(0, 0, 0, .45)),
     url('https://images.squarespace-cdn.com/content/v1/57879a6cbebafb879f256735/1712832754805-I7IJ7FRXF629FN3PIS3O/KC310124-27.jpg') center/cover no-repeat,
@@ -23,6 +23,7 @@
 
   h1 {
     margin: 0 0 6px;
+    /* skalbar textstorlek, viewport + rem */
     font-size: clamp(2rem, 3.6vw + 1rem, 3.4rem);
     line-height: 1.05;
   }
@@ -75,6 +76,7 @@
     margin-top: 12px;
 
     .chip {
+      /* glas effekt */
       background: var(--chipBg);
       backdrop-filter: blur(4px);
       border-radius: 999px;
@@ -129,11 +131,6 @@
       background: #e9e9e9;
       transform: translateY(-1px);
     }
-
-    &[aria-pressed="true"] {
-      background: var(--secondary);
-      color: var(--text);
-    }
   }
 }
 
@@ -148,6 +145,7 @@
     gap: 16px;
   }
 
+  /* brytpunkter 1 kolumn till 2 och 3 */
   @media (min-width: 640px) {
     .bags__grid {
       grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -247,6 +245,7 @@
       display: none;
     }
 
+    /* pil för öppna stäng */
     summary::after {
       content: "▾";
       font-size: 1.2rem;
@@ -256,7 +255,8 @@
       grid-area: price;
       align-self: center;
     }
-    /* details bag, open trigger */
+
+    /* rotera pil när öppet */
     &[open] summary::after {
       transform: rotate(180deg);
     }
@@ -281,9 +281,9 @@
         list-style: disc;
         color: #333;
       }
-    } 
+    }
 
-
+    /* visa innehåll när öppet, height 0 -> fit content*/
     &[open] .recipes {
       max-height: fit-content;
       opacity: 1;
@@ -291,7 +291,6 @@
   }
 }
 
-/* focus-visible */
 .bags details.bag:focus-within {
   outline-color: var(--secondary);
 }
@@ -375,6 +374,7 @@
   }
 
   .cta__content {
+    /* mörkare platta av primär för god kontrast mot vit text */
     background: color-mix(in oklab, var(--primar) 90%, black 10%);
     color: var(--text);
     border-radius: 16px;
@@ -397,7 +397,6 @@
       border-radius: 12px;
       padding: 10px 16px;
       cursor: pointer;
-      font: inherit;
       transition: transform .12s ease, opacity .12s ease;
 
       &:hover {
