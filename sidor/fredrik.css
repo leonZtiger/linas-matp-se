@@ -90,7 +90,7 @@ body {
 .profilbild {
     max-width: 180px;
     border-radius: 50%;
-    margin-right: 20px; /* standard avstånd mellan bild och text */
+    margin-right: 20px; 
     
 }
 
@@ -102,8 +102,8 @@ body {
     }
 
     .profilbild {
-        margin-right: 0;       /* tar bort sidomarginalen */
-        margin-bottom: 15px;   /* lägger till avstånd under bilden */
+        margin-right: 0;   
+        margin-bottom: 15px; 
     }
 }
 
