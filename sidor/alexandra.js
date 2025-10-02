@@ -1,15 +1,6 @@
 const photos = document.querySelectorAll(".photos img");
 let photoIndex = 0;
 
-document.addEventListener("DOMContentLoaded", startAlbum);
-
-function startAlbum() {
-
-    if (photos.length > 0) {
-        photos[photoIndex].classList.add("displayPhoto");
-    }
-}
-
 function showPhoto(index) {
 
     if(index >= photos.length) {
