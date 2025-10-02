@@ -4,7 +4,6 @@ main {
     flex-direction: column;
 }
 
-section {}
 
 .hero {
     position: relative;
@@ -33,9 +32,19 @@ section {}
         object-fit: cover;
         aspect-ratio: 2/1;
         animation: _90sAnim infinite 1s alternate-reverse ease-in-out;
-    
+
         color: aquamarine;
         font-size: 50px;
+    }
+}
+
+main {
+    width: 100%;
+    min-height: 40vh;
+    h1,
+    p {
+        width: 100%;
+        text-align: center;
     }
 }
 
