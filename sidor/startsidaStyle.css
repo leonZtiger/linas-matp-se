@@ -37,7 +37,7 @@ body {
     display: flex;
 }
 
-.recipe-images img{
+.recipe-images img {
     flex: 1;
     max-width: 25%;
 }
@@ -61,28 +61,34 @@ body {
     margin: 0.5rem;
     padding: 1rem 1rem;
     background-color: #59AC77;
+    border-radius: 2%;
     text-align: center;
     flex: 1;
     max-width: 30%;
     box-sizing: border-box;
 }
 
-.horisontal-list img {
-    max-width: 100%;
+.horisontal-list-img-container {
+    width: 100%;
     aspect-ratio: 16/9;
-    height: 200px;
-    object-fit: contain;
+    overflow: hidden;
     border-radius: 2%;
     margin: 0 auto;
     margin-bottom: 1rem;
 }
 
+.horisontal-list img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
 .material-symbols-outlined {
-  font-variation-settings:
-  'FILL' 1,
-  'wght' 400,
-  'GRAD' 0,
-  'opsz' 24
+    font-variation-settings:
+        'FILL' 1,
+        'wght' 400,
+        'GRAD' 0,
+        'opsz' 24
 }
 
 @media only screen and (max-width: 850px) {
@@ -96,7 +102,7 @@ body {
         width: 60%;
     }
 
-    .image-heading-container > div:last-child {
+    .image-heading-container>div:last-child {
         order: -1;
     }
 
