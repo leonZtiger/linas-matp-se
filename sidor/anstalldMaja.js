@@ -4,19 +4,28 @@ fetch('projects.json')
         const container = document.getElementById('projectContainer')
         const grid = document.getElementById('searchContainer')
 
+        const searchWrapper = document.createElement('div')
+        searchWrapper.classList.add('searchWr')
+
         const searchInput = document.createElement('input')
         searchInput.classList.add('search-in')
-        searchContainer.appendChild(searchInput)
+        searchInput.placeholder = 'Sökord...'
+        searchWrapper.appendChild(searchInput)
+
+        searchInput.addEventListener('click', () => {
+            searchInput.placeholder = ''
+        })
 
         const searchBtn = document.createElement('button')
-        searchBtn.innerHTML = `🔍`
+        searchBtn.innerHTML = `🔍︎`
         searchBtn.classList.add('search-btn')
-        searchContainer.appendChild(searchBtn)
+        searchWrapper.appendChild(searchBtn)
 
         const rensaBtn = document.createElement('button')
         rensaBtn.innerHTML = `<b>X</b>`
         rensaBtn.classList.add('rBtn')
-        searchContainer.appendChild(rensaBtn)
+        searchWrapper.appendChild(rensaBtn)
+        grid.appendChild(searchWrapper)
 
         const projectButtons = []
 
@@ -65,6 +74,12 @@ fetch('projects.json')
             closeButton.innerHTML = `<b>X</b>`
             closeButton.addEventListener('click', () => {
                 panel.style.display = 'none'
+
+                projectButtons.forEach(({ button }) => {
+                    button.style.borderColor = ""
+                    searchInput.value = ""
+                })
+
             })
             panel.appendChild(closeButton)
 
