@@ -101,6 +101,7 @@ axios.get('projects.json')
             prevBtn.classList.add('slide-btn', 'left');
             prevBtn.addEventListener('click', () => {
                 if (currentImg > 0) {
+                    currentImg = (currentImg - 1)
                     img.src = 'bilder/' + project.image[currentImg];
                     imgCounter.innerText = `${currentImg + 1} / ${project.image.length}`;
                 }
