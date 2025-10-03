@@ -1,6 +1,5 @@
 body {
     background-color: #FFF0F0;
-    /* overflow-x: hidden; */
 }
 
 .titelAnstalld {
@@ -147,9 +146,6 @@ img#bild1 {
     transition: 0.4s;
 }
 
-.search-btn:hover {
-    transform: scale(1.2);
-}
 
 .rBtn {
     position: absolute;
@@ -164,8 +160,20 @@ img#bild1 {
     transition: all 0.3s ease;
 }
 
+.filterBtn {
+    position: absolute;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.search-btn:hover,
 .rBtn:hover {
     transform: scale(1.2);
+}
+
+.filterBtn:hover {
+    transform: translateY(-2px);
 }
 
 .accordion {
