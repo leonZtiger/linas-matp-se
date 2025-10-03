@@ -1,6 +1,7 @@
-fetch('projects.json')
-    .then(response => response.json())
-    .then(projects => {
+axios.get('projects.json')
+    .then(response => {
+
+        const projects = response.data
         const container = document.getElementById('projectContainer')
         const grid = document.getElementById('searchContainer')
 
