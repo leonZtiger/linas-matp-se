@@ -1,0 +1,50 @@
+[
+  {
+    "id": 1,
+    "title": "Frukt & Grönt Omfrontning",
+    "client": "ICA Norr",
+    "date": "2025-09-14",
+    "image": "./bilder/bengt/frukt.png",
+    "summary": "Total omfrontning av frukt och grönt efter säsong."
+  },
+  {
+    "id": 2,
+    "title": "Kylhylla – Mejerioptimering",
+    "client": "Coop Umeå Centrum",
+    "date": "2025-06-02",
+    "image": "./bilder/bengt/mejeri.png",
+    "summary": "Omflytt och facing för bättre plockflöde."
+  },
+  {
+    "id": 3,
+    "title": "Brödavdelning – Helgkampanj",
+    "client": "Willys Ersboda",
+    "date": "2024-12-19",
+    "image": "./bilder/bengt/brod.png",
+    "summary": "Kampanjexponering med fokus på färska baguetter."
+  },
+  {
+    "id": 4,
+    "title": "Dryck – Sommardrycker",
+    "client": "Hemköp City",
+    "date": "2024-06-10",
+    "image": "./bilder/bengt/dryck.png",
+    "summary": "Frontning och volymexponering av läsk och vatten."
+  },
+  {
+    "id": 5,
+    "title": "Snacks – VM-hylla",
+    "client": "ICA Kvantum",
+    "date": "2023-11-05",
+    "image": "./bilder/bengt/snacks.png",
+    "summary": "Temahylla för fotbolls-VM – chips & dipp."
+  },
+  {
+    "id": 6,
+    "title": "Konfekt – Julgodis",
+    "client": "Lidl Umeå",
+    "date": "2023-12-01",
+    "image": "./bilder/bengt/jul.png",
+    "summary": "Säsongsställ med tydlig sortering och prisbild."
+  }
+]

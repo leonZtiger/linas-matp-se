@@ -1,39 +1,68 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="sv">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="main.js" defer></script>
-    <link href="theme.css" rel="stylesheet" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="bengt.css" rel="stylesheet" />
+    <link href="theme.css" rel="stylesheet" />
+    <script src="main.js" defer></script>
+    <script src="bengt.js" defer></script>
 </head>
 
-<body onload="loadContent()">
-    <!-- Header with inserted html from main.js -->
+<body onload="initBengt();loadContent();">
     <div id="header"></div>
 
+
     <section class="hero">
-        <img src="./bilder/bengt.png" class="bengt-img" />
-        <img src="./bilder/sunglasses.png" class="sunglasses" />
-        <h2>Värdens bästa frontare!</h2>
+        <img src="./bilder/bengt.png" class="bengt-img" alt="Bengt" />
+        <img src="./bilder/sunglasses.png" class="sunglasses" alt="" />
+        <h2>Världens bästa frontare!</h2>
     </section>
 
-
     <main>
-        <h1>
-            Bengt – The Legendary Fronter from Umeå
-        </h1>
-
+        <h1>Bengt – The Legendary Fronter from Umeå</h1>
         <p>
-            Bengt, born and raised in the northern Swedish city of Umeå, has become a legend in the supermarket world.
-            Known for his big smile, warm heart, and unmatched dedication, Bengt is celebrated as the best “fronter” in
-            the world the master of keeping every shelf perfectly stocked and every apple in its rightful place.
-            Customers don’t just come to shop; they come for Bengt’s friendly presence and genuine care. His Texas-style
-            charm, combined with northern Swedish roots, makes him a true icon of the grocery aisles.
+            Bengt är känd för sitt leende och sin ordning. Hyllor raka,
+            frukten på rätt plats och nöjda kunder.
         </p>
+
+        <!-- Enkel karusell -->
+        <section class="gallery" aria-label="Bengt bildgalleri">
+            <h2>Galleri</h2>
+            <div class="carousel">
+                <button id="btnPrev" class="btn" aria-label="Föregående">‹</button>
+                <img id="carImg" src="" alt="Galleri" />
+                <button id="btnNext" class="btn" aria-label="Nästa">›</button>
+            </div>
+        </section>
+
+        <!-- Status -->
+        <section class="status" aria-label="Plockförmåga">
+            <h2>Status: Plockförmåga</h2>
+            <div class="progress-wrap">
+                <div id="skillBar" class="progress-bar" style="width:0%"></div>
+            </div>
+            <p id="skillLabel" class="progress-label">Order Picking Skill: 0%</p>
+        </section>
+
+        <!-- Projekt -->
+        <section class="projects" aria-label="Tidigare uppdrag">
+            <div class="projects-header">
+                <h2>Tidigare Uppdrag</h2>
+                <label>
+                    Sortera:
+                    <select id="sortOrder">
+                        <option value="desc">Nyast först</option>
+                        <option value="asc">Äldst först</option>
+                    </select>
+                </label>
+            </div>
+            <div id="projectsGrid" class="projects-grid"></div>
+        </section>
     </main>
 
+    <!-- Footer läses in via JS -->
     <div id="footer"></div>
 </body>
 
