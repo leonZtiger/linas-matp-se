@@ -61,8 +61,14 @@ axios.get('projects.json')
             projectDiv.appendChild(panel);
 
             projectButton.addEventListener('click', () => {
-                panel.style.display = panel.style.display === 'none' ? 'block' : 'none';
-            }); //ändra //
+                if (panel.style.display === 'none') {
+                    
+                    panel.style.display = 'block';
+                } else {
+                    
+                    panel.style.display = 'none';
+                }
+            });
 
             const closeButton = document.createElement('button');
             closeButton.classList.add('close-btn');
